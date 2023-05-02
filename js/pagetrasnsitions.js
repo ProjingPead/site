@@ -6,6 +6,7 @@ const revestButton = document.querySelector("#revest-button");
 const reservaButton = document.querySelector("#reserva-button");
 const sobreButton = document.querySelector("#sobre");
 const contatoButton = document.querySelector("#contato");
+const faleConosco = document.querySelector("#faleConosco")
 
 // itens
 const serviceContent = document.querySelector(".servicos");
@@ -44,6 +45,14 @@ contatoButton.addEventListener("click", function () {
 	sobreOut();
 	contatoIn();
 });
+
+faleConosco.addEventListener("click", function () {
+	inicioOut();
+	serviceOut();
+	sobreOut();
+	contatoIn();
+});
+
 
 //lógica da entrada e saida dos itens de serviços.
 tubosButton.addEventListener("click", function () {
